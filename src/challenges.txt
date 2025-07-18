@@ -1,0 +1,17 @@
+1) Troubleshooting was really my biggest issue. My biggest problem was that my code would randomly just stop between 4k-6k
+emails, and I had no reason why, and I wasn't sure how to document it. When I showed my output to someone, and he saw that
+right before it stalled, the robots.txt reader was getting a lot of failed reads to got along with a lot of failed connections in the
+main scraper, so he suggested to store the robots rules in a map with the putIfAbsent method
+
+2) Figuring out how to make the respectsRobotsTxt class. One problem was building the root url to then add on "robots.txt".
+Then figuring out how to store all those disallowed domains and check them against the actual url. For some reason, my method
+of storing them in a set wasn't working, and then someone told me that there was a library for checking robots.txt so then I did
+research into it and kind of molded it to my own situation.
+
+3) I had started testing the code by just putting the email strings in a hashset, but then I realized I needed to store the
+ source and timestamp in a manner that attached it to the email, so I switched to a hashmap, and created an Email object that could
+ store all three fields.
+
+ 4)Normalizing the emails to make them both canonized for matching in the hashmap to avoid duplicates was a process that
+ involved finding some new methods, like the decoding method
+
