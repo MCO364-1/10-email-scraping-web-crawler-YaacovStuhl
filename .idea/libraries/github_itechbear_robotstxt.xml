@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="github.itechbear.robotstxt" type="repository">
+    <properties maven-id="com.github.itechbear:robotstxt:0.0.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/robotstxt-0.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
